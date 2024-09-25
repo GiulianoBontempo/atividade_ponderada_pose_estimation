@@ -22,3 +22,7 @@ O modelo escolhido foi o yolov8n-pose, por ter todo o poder e arcabouço dos mod
 # Conclusões
 
 Os resultados foram animadores já que, mesmo utilizando o modelo mais leve de pose estimation do yolov8, e realizando somente 50 épocas de treinamento, atingimos um box loss de 0,5024 e um pose loss de 0,4766. Para fins de comparação, na época 1 o box loss era de 1,828 e o pose loss era de 10,57. Olhando para os keypoints que o modelo gerou para as imagens de validação, percebe-se a olho nu que eles parecem fazer sentido, apesar de ainda te rmuito espaço a melhorar. O notebook apresenta uma análise mais aprofundada e gráficos relativos a evolução das métricas ao longo das épocas.
+O principal aprendizado para mim foi a utilização de um modelo Yolo, visto que foi uma experiência nova para mim, e pude perceber o poder desse tipo de modelo e me atentar sobre as especificidades do seu desenvolvimento, como a necessidade de um yaml, e o formato específico das annotations.
+Em relação a limitações do trabalho, diria que a principal limitação foi o hardware, já que não consegui rodar modelo mais pesados como o yolov8x-pose, que era a minha ideia inicial. Além disso o timeframe foi outra limitação, uma vez que o trabalho acabou sendo feito em um período de tempo bem curto.
+## Sugestão de Trabalho Futuro
+Uma boa ideia para trabalho futuro seria incorporar outros animais no treinamento e fazer o modelo distinguir entre eles, além de estimar sua pose. Assim se tornaria um modelo generalista capaz de estimar pose de diversos animais.
